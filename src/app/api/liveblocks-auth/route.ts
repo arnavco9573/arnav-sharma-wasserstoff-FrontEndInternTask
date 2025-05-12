@@ -36,8 +36,7 @@ export async function POST(req: Request) {
     return new Response("Unauthorized kux", { status: 401 });
   }
 
-  const name =
-    user.fullName ?? user.primaryEmailAddress?.emailAddress ?? "Anonymous";
+  const name = user.fullName ?? user.primaryEmailAddress?.emailAddress ?? "Anonymous";
 
   const nameToNumber = name
     .split("")
