@@ -37,7 +37,7 @@ export async function POST(req: Request) {
   }
 
   const name =
-    user.primaryEmailAddress?.emailAddress ?? user.fullName ?? "Anonymous";
+    user.fullName ?? user.primaryEmailAddress?.emailAddress ?? "Anonymous";
 
   const nameToNumber = name
     .split("")
