@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Real-Time Collaborative Text Editor
 
-## Getting Started
+A powerful, real-time collaborative text editor built with **Next.js 15**, **Convex**, **Clerk Auth**, and **Liveblocks**, designed to support modern writing workflows across teams and organizations.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### ✨ Core Editing Features
+- 📝 Rich Text Editor with intuitive UX
+- 💭 Comments & Mentions
+- 📑 Document Templates
+- 📋 Copy/Paste Formatting
+- ↩️ Undo/Redo History
+- 📊 Table Support
+- 📏 Margin & Layout Controls
+- ⬇️ Export to PDF, HTML, TXT, JSON
+
+### 🧠 Collaboration & User Tools
+- 🤝 Real-time multi-user editing with cursor tracking
+- 🎯 Per-user cursor tracking with names & colors
+- 👥 User profiles via Clerk Auth
+- 🏢 Organization workspaces and document management
+- ✉️ Organization invites with role control
+
+### 🧰 Tech Stack
+- ⚛️ Framework: **Next.js 15 (App Router)**
+- 🎨 UI: **Shadcn UI** + **Tailwind CSS**
+- 🧠 Backend: **Convex** for database & real-time sync
+- 🔐 Auth: **Clerk**
+- 🔁 Realtime: **Liveblocks**
+- 🌐 Hosting: **Vercel**
+
+---
+
+## 📸 Live Demo
+
+🔗 [View Live Project](https://task-1-realtime-text-editor.vercel.app/)  
+--- 
+
+## 🧪 Project Highlights
+
+- ✅ Real-time collaboration across multiple browser sessions
+- ✅ Changes are instantly synced across tabs and users
+- ✅ Unique user cursors and colors for distinction
+- ✅ Organization-aware document editing
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/realtime-editor.git
+cd realtime-editor
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install --legacy-peer-deps
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the App
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4.Also run the database
+```bash
+npx convex dev
+```
 
-## Learn More
+### 5. Set Up Environment Variables
+- Create a .env.local file and add the following:
+- CONVEX_DEPLOYMENT=your_convex_deployment_id
+- NEXT_PUBLIC_CONVEX_URL=your_public_convex_url
 
-To learn more about Next.js, take a look at the following resources:
+- NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+- CLERK_SECRET_KEY=your_clerk_secret_key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- LIVEBLOCKS_SECRET_KEY=your_liveblocks_secret_key
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
