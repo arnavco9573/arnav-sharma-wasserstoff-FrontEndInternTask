@@ -52,8 +52,8 @@ A powerful, real-time collaborative text editor built with **Next.js 15**, **Con
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/realtime-editor.git
-cd realtime-editor
+git clone https://github.com/arnavco9573/arnav-sharma-wasserstoff-FrontEndInternTask.git
+cd arnav-sharma-wasserstoff-FrontEndInternTask
 ```
 
 ### 2. Install Dependencies
